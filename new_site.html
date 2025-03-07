@@ -7,37 +7,99 @@
     <title>Bootstrap сайт</title>
         <!-- Подключение локальных файлов стилей Bootstrap -->
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 
 </head>
-<body class="h-100"> <!-- Добавляем h-100 к body -->
+<body>
 
 <!-- Колонка меню -->
 
-<div class="row h-100"> <!-- Основной блок для работы с колонками -->
+<div class="row"> <!-- Основной блок для работы с колонками -->
     <div class="col-2">
-            <div class="col-12"> <!-- Колонка для отображения меню -->
+        <div class="row">
+            <div class="col-10"> <!-- Колонка для отображения меню -->
                 <div class="card text-bg-dark"> <!-- Карточка для визуального меню -->
                     <div class="card-body"> <!-- Тело карточки, внутри которого размещаются данные -->
-                        <div class="p-3"> <!-- Добавляем отступ внутри меню -->
-                        <h2>Меню:</h2>
+                        <div class="p-4"> <!-- Добавляем отступ внутри меню -->
+                        <h2><i class="bi bi-bootstrap-fill"></i> Меню:</h2>
                         <hr><!-- Добавили линию -->
-                            <h6>Главная </h6>
-                            <h6>Каталог</h6>
-                            <h6>Категории</h6>
-                            <h6>Контакты <span class=""></span></h6>
+                            <a href="new_site.html" class="list-group-item list-group-item-action active" aria-current="true">
+                                <h6><i class="bi bi-house-door"></i> Главная</h6>
+                            </a>
+                            <a href="catalog_page.html" class="list-group-item list-group-item-action active" aria-current="true">
+                                <h6><i class="bi bi-book"></i> Каталог</h6>
+                            </a>
+                            <a href="categories_page.html" class="list-group-item list-group-item-action active" aria-current="true">
+                                <h6><i class="bi bi-speedometer2"></i> Категории</h6>
+                            </a>
+                            <a href="contacts_page.html" class="list-group-item list-group-item-action active" aria-current="true">
+                                <h6><i class="bi bi-person-lines-fill"></i> Контакты</h6>
+                            </a>
+                              <div class="inner-div" style="padding: 320px;"></div>
                             <hr><!-- Добавили линию -->
                             <h6>Профиль</h6>
-
-
-
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
     </div>
-</div>
 
-    <div class="col-8"> <!-- Колонка шириной 8/12 для размещения основного контента -->
+
+<!-- Страница-->
+
+    <div class="col-10">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 p-5 text-center">
+                <h1>Главная</h1>
+                <h6 class="text-muted">Вы находитесь на сайте, предназначенном для продажи товаров.</h6>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Товар 1</h5>
+                        <h4 class="card-text">$100</h4>
+                        <p class="card-text">
+                            10 пользователей включено, 2 ГБ хранилища. Поддержка по email. Доступ к центру помощи.
+                        </p>
+                        <a href="#" class="btn btn-primary">Купить</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Товар 2</h5>
+                        <h4 class="card-text">$100</h4>
+                        <p class="card-text">
+                            10 пользователей включено, 2 ГБ хранилища. Поддержка по email. Доступ к центру помощи.
+                        </p>
+                        <a href="#" class="btn btn-primary">Купить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Товар 3</h5>
+                        <h4 class="card-text">$100</h4>
+                        <p class="card-text">
+                            10 пользователей включено, 2 ГБ хранилища. Поддержка по email. Доступ к центру помощи.
+                        </p>
+                        <a href="#" class="btn btn-primary">Купить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-1"></div>
+    </div>
+
+</div>
 </body>
 </html>
