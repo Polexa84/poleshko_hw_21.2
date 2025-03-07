@@ -10,7 +10,7 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
         # Читаем содержимое HTML-файла
         try:
-            with open("contacts_page.html", "r", encoding="utf-8") as f:
+            with open("web_site/contacts_page.html", "r", encoding="utf-8") as f:
                 html_content = f.read()
         except FileNotFoundError:
             self.send_response(404)
@@ -23,7 +23,11 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-type", "text/html")
         self.end_headers()
-        self.wfile.write(html_content.encode("utf-8"))
+        try:  # Добавляем try...except для BrokenPipeError
+            self.wfile.write(html_content.encode("utf-8"))
+        except BrokenPipeError:
+            print("BrokenPipeError: Соединение с клиентом разорвано.") # Логируем ошибку (опционально)
+            pass # Просто пропускаем ошибку
 
 # Создаем обработчик TCP-соединений
 Handler = MyHandler
