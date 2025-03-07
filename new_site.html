@@ -1,10 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Адаптивный дизайн для разных устройств -->
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <title>Bootstrap сайт</title>
+        <!-- Подключение локальных файлов стилей Bootstrap -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
 
+</head>
+<body class="h-100"> <!-- Добавляем h-100 к body -->
+
+<!-- Колонка меню -->
+
+<div class="row h-100"> <!-- Основной блок для работы с колонками -->
+    <div class="col-2">
+            <div class="col-12"> <!-- Колонка для отображения меню -->
+                <div class="card text-bg-dark"> <!-- Карточка для визуального меню -->
+                    <div class="card-body"> <!-- Тело карточки, внутри которого размещаются данные -->
+                        <div class="p-3"> <!-- Добавляем отступ внутри меню -->
+                        <h2>Меню:</h2>
+                        <hr><!-- Добавили линию -->
+                            <h6>Главная </h6>
+                            <h6>Каталог</h6>
+                            <h6>Категории</h6>
+                            <h6>Контакты <span class=""></span></h6>
+                            <hr><!-- Добавили линию -->
+                            <h6>Профиль</h6>
+
+
+
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+    <div class="col-8"> <!-- Колонка шириной 8/12 для размещения основного контента -->
+    </div>
+    <div class="col-1"></div>
 </body>
 </html>
