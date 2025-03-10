@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Адаптивный дизайн для разных устройств -->
+    <meta charset="UTF-8">
+    <title>Bootstrap сайт</title>
+        <!-- Подключение локальных файлов стилей Bootstrap -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+</head>
+<body>
+
+<!-- Колонка меню -->
+
+<div class="row"> <!-- Основной блок для работы с колонками -->
+    <div class="col-2">
+        <div class="row">
+            <div class="col-10"> <!-- Колонка для отображения меню -->
+                <div class="card text-bg-dark"> <!-- Карточка для визуального меню -->
+                    <div class="card-body"> <!-- Тело карточки, внутри которого размещаются данные -->
+                        <div class="p-4"> <!-- Добавляем отступ внутри меню -->
+                        <h2><i class="bi bi-bootstrap-fill"></i> Меню:</h2>
+                        <hr><!-- Добавили линию -->
+                            <a href="new_site.html" class="list-group-item list-group-item-action active" aria-current="true">
+                                <h6><i class="bi bi-house-door"></i> Главная</h6>
+                            </a>
+                            <a href="catalog_page.html" class="list-group-item list-group-item-action active" aria-current="true">
+                                <h6><i class="bi bi-book"></i> Каталог</h6>
+                            </a>
+                            <a href="categories_page.html" class="list-group-item list-group-item-action active" aria-current="true">
+                                <h6><i class="bi bi-speedometer2"></i> Категории</h6>
+                            </a>
+                            <a href="contacts_page.html" class="list-group-item list-group-item-action active" aria-current="true">
+                                <h6><i class="bi bi-person-lines-fill"></i> Контакты</h6>
+                            </a>
+                              <div class="inner-div" style="padding: 320px;"></div>
+                            <hr><!-- Добавили линию -->
+                            <h6>Профиль</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Страница--> <!-- Контакты -->
+    <div class="col-10"> <!-- Колонка шириной 10/12 для отображения основного контента -->
+    <div class="container-fluid"> <!-- Контейнер, обеспечивающий отступы по бокам -->
+        <div class="row"> <!-- Основная строка для контента -->
+            <div class="col-12 p-5 text-center"> <!-- Колонка с заголовком, выровненным по центру -->
+                <h1>Контакты</h1> <!-- Заголовок страницы -->
+            </div>
+        </div>
+
+        <div class="row"> <!-- Строка для формы и контактной информации -->
+            <div class="col-md-6"> <!-- Колонка для формы, занимает половину ширины на средних экранах и выше -->
+                <form> <!-- Форма обратной связи -->
+                    <div class="mb-3"> <!-- Отступ снизу -->
+                        <label for="name" class="form-label">Ваше имя</label> <!-- Заголовок поля -->
+                        <input type="text" class="form-control" id="name" placeholder="Введите ваше имя"> <!-- Поле для ввода имени -->
+                    </div>
+                    <div class="mb-3"> <!-- Отступ снизу -->
+                        <label for="email" class="form-label">Ваш email</label> <!-- Заголовок поля -->
+                        <div class="input-group"> <!-- Группа элементов для поля почты -->
+                            <span class="input-group-text">@</span> <!-- Символ @ -->
+                            <input type="email" class="form-control" id="email" placeholder="Введите ваш email"> <!-- Поле для ввода почты -->
+                        </div>
+                    </div>
+                    <div class="mb-3"> <!-- Отступ снизу -->
+                        <label for="message" class="form-label">Ваше сообщение</label> <!-- Заголовок поля -->
+                        <textarea class="form-control" id="message" rows="3" placeholder="Напишите ваше сообщение"></textarea> <!-- Текстовое поле для сообщения -->
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить сообщение</button> <!-- Кнопка "Отправить" -->
+                </form>
+            </div>
+
+            <div class="col-md-6"> <!-- Колонка для контактной информации -->
+                <h2>Наши контакты</h2> <!-- Заголовок блока -->
+                <p>Мы всегда рады общению! Если у вас есть вопросы, предложения или просто хотите сказать "Привет", не стесняйтесь обращаться к нам. </p> <!-- Текст с контактной информацией -->
+                <p>Вы можете связаться с нами по электронной почте или через форму обратной связи. Мы постараемся ответить вам в кратчайшие сроки.</p> <!-- Дополнительная информация -->
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
